@@ -1,0 +1,42 @@
+[33mcommit 36581cdb3fbdfe4fa6f84f71bb0f90fbe0027702[m
+Merge: 3831525 d616fab
+Author: Rubeji <rubech@gmail.com>
+Date:   Thu Dec 17 10:35:02 2015 -0600
+
+    Merge branch 'master' of https://github.com/rube-ch/PopularMoviesStage1
+
+[33mcommit d616fab562ea19181fd6f3aff5be0b4510896f30[m
+Author: rube-ch <rube-ch@users.noreply.github.com>
+Date:   Thu Dec 17 10:12:26 2015 -0600
+
+    Update README.md
+
+[33mcommit 0ea03fe6ad535436a6fead1ce3735bc581247401[m
+Author: rube-ch <rube-ch@users.noreply.github.com>
+Date:   Thu Dec 17 10:09:31 2015 -0600
+
+    Initial commit
+
+[33mcommit 38315250103588aeba17459d5707b8baa2e7c231[m
+Author: Rubeji <rubech@gmail.com>
+Date:   Thu Dec 17 10:06:13 2015 -0600
+
+    Popular Movies Stage 1 Finalized without API Key
+
+[33mcommit a1fdc4206d8a3d7a5c2516c723aae49c6ec15656[m
+Author: Rubeji <rubech@gmail.com>
+Date:   Thu Dec 17 10:01:09 2015 -0600
+
+    Popular Movies Stage 1 Finalized
+
+[33mcommit 7c473238b5832e29e915cafd1db96bb7b6e234f4[m
+Author: rubech <rubech@gmail.com>
+Date:   Tue Sep 8 19:46:12 2015 -0500
+
+    First stage completed. TODO: Add comments to code, refactor to follow better practices and code eqiqute
+
+[33mcommit 7cf123069ff1963fbbb3930e0fced79f70d58aca[m
+Author: rubech <rubech@gmail.com>
+Date:   Tue Sep 1 19:13:25 2015 -0500
+
+    Added Details Activity Layout. TODO: Layout details and create Asyntask to retrieve movie details

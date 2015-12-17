@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Popular Movies</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="pref_sort_movies_label">Sort Movies By:</string>
+    <string name="pref_sort_movies_key" translatable="false">pref_sortOrder</string>
+    <string name="pref_sort_movies_popularity" translatable="false">popularity.desc</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="title_activity_movie_details">MovieDetails</string>
+    <string name="movie_title">Movie Title</string>
+    <string name="favorite_button">Mark as favorite</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
