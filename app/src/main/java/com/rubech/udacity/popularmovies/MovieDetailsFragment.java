@@ -1,4 +1,4 @@
-package com.example.android.popularmovies;
+package com.rubech.udacity.popularmovies;
 
 import android.net.Uri;
 import android.os.AsyncTask;
@@ -175,7 +175,7 @@ public class MovieDetailsFragment extends Fragment {
             // Will contain the raw JSON response as a string.
             String moviesJsonStr = null;
 
-            String apiKey = "YourAPIKey";
+            String apiKey = BuildConfig.MOVIE_DB_API_KEY;
 
             try {
                 // Construct the URL for the Movie Database query

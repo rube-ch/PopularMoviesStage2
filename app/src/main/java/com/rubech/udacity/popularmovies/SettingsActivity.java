@@ -1,4 +1,4 @@
-package com.example.android.popularmovies;
+package com.rubech.udacity.popularmovies;
 
 import android.os.Bundle;
 import android.preference.ListPreference;

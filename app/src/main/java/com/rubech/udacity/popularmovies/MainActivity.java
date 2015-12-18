@@ -1,4 +1,4 @@
-package com.example.android.popularmovies;
+package com.rubech.udacity.popularmovies;
 
 import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
