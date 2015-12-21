@@ -16,40 +16,13 @@ public class MoviesContract {
     public static final Uri BASE_CONTENT_URI = Uri.parse("content://" + CONTENT_AUTHORITY);
 
     public static final String PATH_MOVIE = "movie";
-    public static final String PATH_FILTER = "filter";
     public static final String PATH_TRAILER = "trailer";
     public static final String PATH_REVIEW = "review";
 
-    /* Inner class that defines the table contents of the filter table
-    * We define this table to have a local representation of the two options of the API:
-    * Popularity and highest rated
-    * And addtionally to have the list of Favorite movies of the user
-    * */
-    public static final class FilterEntry implements BaseColumns {
-
-        public static final Uri CONTENT_URI =
-                BASE_CONTENT_URI.buildUpon().appendPath(PATH_FILTER).build();
-
-        public static final String CONTENT_TYPE =
-                ContentResolver.CURSOR_DIR_BASE_TYPE + "/" + CONTENT_AUTHORITY + "/" + PATH_FILTER;
-        public static final String CONTENT_ITEM_TYPE =
-                ContentResolver.CURSOR_ITEM_BASE_TYPE + "/" + CONTENT_AUTHORITY + "/" + PATH_FILTER;
-
-        // Table name
-        public static final String TABLE_NAME = "filter";
-
-        // The filter name string is what will be sent to movie db
-        // as the sorting query.
-        public static final String COLUMN_FILTER_NAME = "filter_name";
-
-        public static Uri buildFilterUri(long id) {
-            return ContentUris.withAppendedId(CONTENT_URI, id);
-        }
-    }
 
     /* Inner class that defines the table contents of the movies table
-    * There is a reference to the API filter and the order of the movie in this filter
-    */
+    * The table _ID refers to the API ID
+    **/
     public static final class MovieEntry implements BaseColumns {
 
         public static final Uri CONTENT_URI =
@@ -62,15 +35,6 @@ public class MoviesContract {
 
         // Table name
         public static final String TABLE_NAME = "movie";
-
-        // Column with the foreign key into the filter table.
-        public static final String COLUMN_FILTER_KEY = "filter_id";
-
-        // Column with the order of the movie in the filter.
-        public static final String COLUMN_FILTER_ORDER = "filter_order";
-
-        //Column with the movie ID of the moviedb API, to query trailers and reviews
-        public static final String COLUMN_MOVIE = "movie_id";
 
         // Column with the URL of the movie poster.
         public static final String COLUMN_POSTER = "poster";
@@ -90,6 +54,14 @@ public class MoviesContract {
         // Overview of the movie
         public static final String COLUMN_OVERVIEW = "overview";
 
+        // Column with index of the movies by popularity.
+        public static final String COLUMN_POPULARITY = "popularity_index";
+
+        // Column with index of the movies by user rating
+        public static final String COLUMN_RATING = "rating_index";
+
+        // Column with index of the movies by user rating
+        public static final String COLUMN_FAVORITES = "favorite";
 
         public static Uri buildMovieUri(long id) {
             return ContentUris.withAppendedId(CONTENT_URI, id);
